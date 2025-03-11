@@ -1,0 +1,18 @@
+---
+export interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<nav class="bg-blue-600 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-lg font-bold">{title || "Mi Sitio con Astro"}</h1>
+    <ul class="flex space-x-4">
+      <li><a href="/" class="hover:underline">Inicio</a></li>
+      <li><a href="/about" class="hover:underline">Sobre Nosotros</a></li>
+      <li><a href="/contact" class="hover:underline">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
