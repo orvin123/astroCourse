@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/card.astro';
+import Button from '../components/button.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -10,5 +12,15 @@ import Layout from '../layouts/Layout.astro';
 		<h1>Bienvenido a Astro.</h1>
 		<p>Astro es un framework moderno de front-end diseñado para crear sitios web rápidos y optimizados. Su enfoque principal es la generación de páginas estáticas con un "zero JavaScript runtime", lo que significa que la mayoría del código se convierte en HTML y CSS puro para mejorar el rendimiento.</p>
 	</div>
+	<div class="flex justify-center gap-4 mt-6">
+		<Card title="Velocidad" description="Astro genera sitios web ultrarrápidos." />
+		<Card title="Eficiencia" description="Solo carga lo necesario para cada página." />
+	  
+	</div>
+	<div class="container bg-gray-100 p-4 text-center mt-6">
+		<h1>Más información</h1>
+		<Button label="Ver mas" ></Button>
+	</div>
+	
 	
 </Layout>
